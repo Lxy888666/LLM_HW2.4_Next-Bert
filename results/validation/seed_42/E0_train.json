@@ -1,0 +1,140 @@
+{
+  "steps": 500,
+  "encoder_passes": 2,
+  "batch": 8,
+  "length": 256,
+  "seconds": 23.6725843000022,
+  "estimated_matmul_training_flops": 71933991321600.0,
+  "logs": [
+    {
+      "step": 1,
+      "mlm": 5.988130569458008,
+      "contrastive": 0.0
+    },
+    {
+      "step": 20,
+      "mlm": 6.170409202575684,
+      "contrastive": 0.0
+    },
+    {
+      "step": 40,
+      "mlm": 6.050075531005859,
+      "contrastive": 0.0
+    },
+    {
+      "step": 60,
+      "mlm": 6.49116325378418,
+      "contrastive": 0.0
+    },
+    {
+      "step": 80,
+      "mlm": 6.409257888793945,
+      "contrastive": 0.0
+    },
+    {
+      "step": 100,
+      "mlm": 6.130722999572754,
+      "contrastive": 0.0
+    },
+    {
+      "step": 120,
+      "mlm": 6.075680732727051,
+      "contrastive": 0.0
+    },
+    {
+      "step": 140,
+      "mlm": 6.03668212890625,
+      "contrastive": 0.0
+    },
+    {
+      "step": 160,
+      "mlm": 6.281712532043457,
+      "contrastive": 0.0
+    },
+    {
+      "step": 180,
+      "mlm": 6.082526206970215,
+      "contrastive": 0.0
+    },
+    {
+      "step": 200,
+      "mlm": 6.382026672363281,
+      "contrastive": 0.0
+    },
+    {
+      "step": 220,
+      "mlm": 6.134763717651367,
+      "contrastive": 0.0
+    },
+    {
+      "step": 240,
+      "mlm": 5.967221260070801,
+      "contrastive": 0.0
+    },
+    {
+      "step": 260,
+      "mlm": 5.867090702056885,
+      "contrastive": 0.0
+    },
+    {
+      "step": 280,
+      "mlm": 6.2875776290893555,
+      "contrastive": 0.0
+    },
+    {
+      "step": 300,
+      "mlm": 6.264379978179932,
+      "contrastive": 0.0
+    },
+    {
+      "step": 320,
+      "mlm": 6.237810134887695,
+      "contrastive": 0.0
+    },
+    {
+      "step": 340,
+      "mlm": 5.791589736938477,
+      "contrastive": 0.0
+    },
+    {
+      "step": 360,
+      "mlm": 5.971278190612793,
+      "contrastive": 0.0
+    },
+    {
+      "step": 380,
+      "mlm": 6.254705429077148,
+      "contrastive": 0.0
+    },
+    {
+      "step": 400,
+      "mlm": 6.032805442810059,
+      "contrastive": 0.0
+    },
+    {
+      "step": 420,
+      "mlm": 6.093489646911621,
+      "contrastive": 0.0
+    },
+    {
+      "step": 440,
+      "mlm": 6.301731109619141,
+      "contrastive": 0.0
+    },
+    {
+      "step": 460,
+      "mlm": 5.803106784820557,
+      "contrastive": 0.0
+    },
+    {
+      "step": 480,
+      "mlm": 5.941163539886475,
+      "contrastive": 0.0
+    },
+    {
+      "step": 500,
+      "mlm": 5.91839075088501,
+      "contrastive": 0.0
+    }
+  ]
+}

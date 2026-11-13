@@ -1,0 +1,28 @@
+{
+  "torch": "2.5.1+cu121",
+  "numpy": "1.26.4",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "seeds": [
+    17,
+    42,
+    71
+  ],
+  "base_steps": 3000,
+  "branch_steps": 500,
+  "config": {
+    "vocab": 8192,
+    "layers": 6,
+    "hidden": 256,
+    "heads": 4,
+    "intermediate": 688,
+    "window": 64,
+    "global_every": 3,
+    "dropout": 0.1,
+    "rope_theta": 10000.0,
+    "chunk": 256
+  },
+  "tokenizer_sha256": "2736ca836747f9c382335980cc1b286f1671d1f02df00506599defe6aeeede47",
+  "dataset_manifest_sha256": "592838910e187e65fc1a92a362b800912df641569d9464b01a7f3aaa4e7bc989",
+  "precision": "FP32 parameters and AdamW states; BF16 autocast",
+  "implementation": "PyTorch SDPA with exact masks and query chunks; no FlashAttention kernel enabled"
+}

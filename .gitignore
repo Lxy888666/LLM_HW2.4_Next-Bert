@@ -1,0 +1,12 @@
+# Local data, reproduction runs and checkpoints
+/data/raw/
+/results/reproduction/
+*.pt
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Logs
+*.log

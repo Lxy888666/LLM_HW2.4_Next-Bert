@@ -1,0 +1,30 @@
+{
+  "config": {
+    "vocab": 64000,
+    "layers": 24,
+    "hidden": 896,
+    "heads": 14,
+    "intermediate": 2400,
+    "window": 512,
+    "global_every": 3,
+    "dropout": 0.1,
+    "rope_theta": 10000.0,
+    "chunk": 256
+  },
+  "parameters": 290199552,
+  "seed": 17,
+  "trained": false,
+  "optimizer_step": false,
+  "scope": "Random initialization, encoder-only forward, no full-vocabulary logits",
+  "forward": {
+    "256": {
+      "median_ms": 37.89079999842215
+    },
+    "1024": {
+      "median_ms": 56.56440000166185
+    },
+    "8192": {
+      "median_ms": 613.4673999986262
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "seed": 17,
+  "variant": "E1",
+  "parameters": 6921216,
+  "mlm_validation": {
+    "loss": 5.922543473254777,
+    "masked_tokens": 2155
+  },
+  "classification": {
+    "en": {
+      "accuracy": 0.546875,
+      "macro_f1": 0.5166666666666666
+    },
+    "zh": {
+      "accuracy": 0.5625,
+      "macro_f1": 0.5615365793980915
+    },
+    "fixed_reference_head": {
+      "en": {
+        "accuracy": 0.50390625,
+        "macro_f1": 0.43215439699589553
+      },
+      "zh": {
+        "accuracy": 0.52734375,
+        "macro_f1": 0.5247257383966245
+      }
+    }
+  },
+  "extraction": {
+    "en": {
+      "exact_match": 0.03125,
+      "f1": 0.1231821968585465
+    },
+    "zh": {
+      "exact_match": 0.0,
+      "f1": 0.11096307967353666
+    },
+    "windows": {
+      "train": 1050,
+      "validation": 255,
+      "test": 535
+    },
+    "fixed_reference_head": {
+      "en": {
+        "exact_match": 0.0390625,
+        "f1": 0.11047225769640147
+      },
+      "zh": {
+        "exact_match": 0.0,
+        "f1": 0.09866693239788095
+      }
+    }
+  },
+  "retrieval": {
+    "en": {
+      "mrr": 0.12094560627702973,
+      "recall_at_1": 0.03125,
+      "recall_at_5": 0.1796875,
+      "recall_at_10": 0.265625,
+      "ndcg_at_10": 0.13841769569036455
+    },
+    "zh": {
+      "mrr": 0.11652396211107953,
+      "recall_at_1": 0.046875,
+      "recall_at_5": 0.140625,
+      "recall_at_10": 0.25,
+      "ndcg_at_10": 0.12769031238997963
+    }
+  },
+  "reranking": {
+    "en": {
+      "mrr": 0.37357700892857143,
+      "recall_at_1": 0.1796875,
+      "recall_at_5": 0.625,
+      "recall_at_10": 1.0,
+      "ndcg_at_10": 0.51857069401743
+    },
+    "zh": {
+      "mrr": 0.4070250496031746,
+      "recall_at_1": 0.1875,
+      "recall_at_5": 0.7421875,
+      "recall_at_10": 1.0,
+      "ndcg_at_10": 0.5465444712063824
+    },
+    "fixed_reference_head": {
+      "en": {
+        "mrr": 0.3535187251984127,
+        "recall_at_1": 0.171875,
+        "recall_at_5": 0.578125,
+        "recall_at_10": 1.0,
+        "ndcg_at_10": 0.5021399221776106
+      },
+      "zh": {
+        "mrr": 0.3867590525793651,
+        "recall_at_1": 0.171875,
+        "recall_at_5": 0.65625,
+        "recall_at_10": 1.0,
+        "ndcg_at_10": 0.529920921946332
+      }
+    }
+  },
+  "long_evidence": {
+    "256_near": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "256_middle": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "256_far": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "256_removed": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "1024_near": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "1024_middle": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "1024_far": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "1024_removed": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "8192_near": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "8192_middle": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "8192_far": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    },
+    "8192_removed": {
+      "accuracy": 0.5,
+      "counterfactual_pair_accuracy": 0.0,
+      "n": 8
+    }
+  },
+  "deployment": {
+    "256": {
+      "batch": 1,
+      "median_ms": 9.516700003587175,
+      "tokens_per_second": 26900.080900260036,
+      "output_shape": [
+        1,
+        256,
+        256
+      ]
+    },
+    "1024": {
+      "batch": 1,
+      "median_ms": 14.240199998312164,
+      "tokens_per_second": 71909.1024087703,
+      "output_shape": [
+        1,
+        1024,
+        256
+      ]
+    },
+    "8192": {
+      "batch": 1,
+      "median_ms": 82.58439999917755,
+      "tokens_per_second": 99195.48970606535,
+      "output_shape": [
+        1,
+        8192,
+        256
+      ]
+    }
+  },
+  "evaluation_seconds": 15.05079239999759
+}

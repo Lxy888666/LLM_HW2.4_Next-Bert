@@ -1,0 +1,73 @@
+{
+  "seed": 20261114,
+  "raw_sha256": {
+    "chn_test.arrow": "8abe8bad8ce309d81ce9aab2d4d1317bca4845bfec2f58cfe15a9aa9795a82e8",
+    "chn_train.arrow": "700595b90463a84f5fb6466e1723d0de67decc464a666d9fbaffce6050eb5773",
+    "chn_validation.arrow": "c7484a693e3f15bce7eb42c8d8d97ae2c63d9c2e2b7c1c8aecd0e345ed7c1b6d",
+    "cmrc_train.json": "d935a2d2c3ea8fef4b6b3d7f1c876f5870b720fc0c9caf4d14989f394a3d4745",
+    "squad_dev.json": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+    "squad_train.json": "3527663986b8295af4f7fcdff1ba1ff3f72d07d61a20f487cb238a6ef92fd955",
+    "sst2_train.parquet": "66a253e67968acfabcbe49dbe9da964b42ac1c851c40ab760e8c8942efdb3229",
+    "sst2_validation.parquet": "a1371f3b3a7b0bcefa8388799a9359dc3ce76c349cc0079507a7991364fd2a9b"
+  },
+  "prepared_sha256": {
+    "classification.json": "cfc3ec5dfe84be81783f919c27e201ff535c0a7c9114f1156d6f35a70e80b698",
+    "corpus.json": "aa7f24252ae27001fc87cfe105680310bb7cba4668adfcd5b0b6af568229e5e0",
+    "qa.json": "26ec366f0d7c76518fb9e8e60226d9f1a7bd17249f41c7625eb97397c265e114",
+    "tokenizer.json": "2736ca836747f9c382335980cc1b286f1671d1f02df00506599defe6aeeede47"
+  },
+  "classification_counts": {
+    "en": {
+      "test": 256,
+      "validation": 128,
+      "train": 512
+    },
+    "zh": {
+      "test": 256,
+      "validation": 128,
+      "train": 512
+    }
+  },
+  "qa_counts": {
+    "en": {
+      "test": 128,
+      "validation": 64,
+      "train": 256
+    },
+    "zh": {
+      "test": 128,
+      "validation": 64,
+      "train": 256
+    }
+  },
+  "audit": {
+    "en": {
+      "qa_source": "SQuAD train/dev",
+      "corpus_documents": 3000
+    },
+    "zh": {
+      "qa_source": "CMRC train, title-disjoint 80/10/10 split",
+      "corpus_documents": 1667
+    }
+  },
+  "tokenizer": {
+    "en": {
+      "tokens": 515817,
+      "characters": 1857005,
+      "mean_tokens": 171.939,
+      "unk_tokens": 0
+    },
+    "zh": {
+      "tokens": 675052,
+      "characters": 849359,
+      "mean_tokens": 404.9502099580084,
+      "unk_tokens": 0
+    }
+  },
+  "vocab_size": 8192,
+  "checks": "classification text, QA paragraph/title split intersections empty; tokenizer train-only",
+  "limitations": [
+    "Exact normalized text deduplication; near-duplicate leakage not fully excluded.",
+    "CMRC uses a local held-out split, not its official leaderboard test set."
+  ]
+}

@@ -1,0 +1,2 @@
+# Preserve the exact bytes recorded by the reproducibility SHA256 manifests.
+* -text

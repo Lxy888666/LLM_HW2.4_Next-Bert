@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "evaluations": 15,
+  "metric_groups_checked": 300,
+  "checks": [
+    "test IDs and labels match frozen data",
+    "main metrics recompute from saved predictions",
+    "three seeds and exact training steps",
+    "balanced long-probe labels and paired scores"
+  ]
+}

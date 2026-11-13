@@ -1,0 +1,5 @@
+numpy==1.26.4
+pyarrow==16.1.0
+tokenizers==0.22.1
+torch==2.5.1
+pytest==7.4.4

@@ -1,0 +1,101 @@
+{
+  "note": "Human-readable record; executable defaults are in scripts/run_scaled.py and src/scaled_model.py.",
+  "target": {
+    "parameters": 290199552,
+    "layers": 24,
+    "hidden": 896,
+    "heads": 14,
+    "intermediate": 2400,
+    "vocab": 64000,
+    "max_input": 8192,
+    "window": 512,
+    "global_every": 3
+  },
+  "reduced": {
+    "parameters": 6921216,
+    "layers": 6,
+    "hidden": 256,
+    "heads": 4,
+    "intermediate": 688,
+    "vocab": 8192,
+    "train_length": 256,
+    "window": 64,
+    "global_every": 3,
+    "dropout": 0.1,
+    "rope_theta": 10000
+  },
+  "training": {
+    "seeds": [
+      17,
+      42,
+      71
+    ],
+    "branch_seed_offset": 100,
+    "base_steps": 3000,
+    "branch_steps": 500,
+    "batch": 8,
+    "english_per_batch": 4,
+    "chinese_per_batch": 4,
+    "mask_rate": 0.15,
+    "base_lr": 0.0005,
+    "branch_lr": 0.0002,
+    "warmup_steps": 20,
+    "weight_decay": 0.01,
+    "grad_clip": 1,
+    "precision": "FP32 parameters, BF16 autocast"
+  },
+  "branches": {
+    "E0": {
+      "masking": "token",
+      "encoder_passes": 2
+    },
+    "E1": {
+      "masking": "token/span alternating",
+      "span_length": [
+        3,
+        8
+      ],
+      "encoder_passes": 2
+    },
+    "E2": {
+      "masking": "token",
+      "window": 128,
+      "encoder_passes": 2
+    },
+    "E3": {
+      "masking": "token",
+      "encoder_passes": 2,
+      "contrastive_weight": 0.1,
+      "temperature": 0.05,
+      "positive_views": "same corrupted document, independent residual dropout",
+      "projection": "none"
+    }
+  },
+  "evaluation": {
+    "encoder": "frozen",
+    "classification_length": 128,
+    "classification_head_updates": 100,
+    "qa_length": 256,
+    "qa_stride": 128,
+    "qa_head_epochs": 8,
+    "retrieval_candidates_per_language": 128,
+    "reranking_candidates": 10,
+    "long_lengths": [
+      256,
+      1024,
+      8192
+    ],
+    "long_cases_per_condition": 8,
+    "benchmark_repeats": 3
+  },
+  "not_executed": [
+    "8K pretraining",
+    "full-size training",
+    "RTD",
+    "diffusion",
+    "LN versus RMSNorm",
+    "GeGLU versus SwiGLU",
+    "vocabulary sizes",
+    "pretrained adaptation"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "seeds": [
+    17,
+    42,
+    71
+  ],
+  "variants": {
+    "B": {
+      "classification.accuracy": {
+        "mean": 0.556640625,
+        "sample_std": 0.03521046167445302
+      },
+      "extraction.f1": {
+        "mean": 0.10161083528576044,
+        "sample_std": 0.014401056186026884
+      },
+      "retrieval.mrr": {
+        "mean": 0.10821424157157318,
+        "sample_std": 0.010778372802301404
+      },
+      "reranking.mrr": {
+        "mean": 0.3448567708333333,
+        "sample_std": 0.018534903540130793
+      }
+    },
+    "E0": {
+      "classification.accuracy": {
+        "mean": 0.5520833333333334,
+        "sample_std": 0.02658929408419549
+      },
+      "extraction.f1": {
+        "mean": 0.08979453787615431,
+        "sample_std": 0.025766933557476102
+      },
+      "retrieval.mrr": {
+        "mean": 0.11446105686514568,
+        "sample_std": 0.008349831216187651
+      },
+      "reranking.mrr": {
+        "mean": 0.3619491980820106,
+        "sample_std": 0.0169481457821768
+      }
+    },
+    "E1": {
+      "classification.accuracy": {
+        "mean": 0.5625,
+        "sample_std": 0.033885452290815375
+      },
+      "extraction.f1": {
+        "mean": 0.09918307946276009,
+        "sample_std": 0.018732128195468028
+      },
+      "retrieval.mrr": {
+        "mean": 0.11458339034572812,
+        "sample_std": 0.0036017132627771033
+      },
+      "reranking.mrr": {
+        "mean": 0.36229797040343914,
+        "sample_std": 0.024645476948433734
+      }
+    },
+    "E2": {
+      "classification.accuracy": {
+        "mean": 0.5514322916666666,
+        "sample_std": 0.020884134026491457
+      },
+      "extraction.f1": {
+        "mean": 0.0976686226858723,
+        "sample_std": 0.026383117312505394
+      },
+      "retrieval.mrr": {
+        "mean": 0.11919591396622833,
+        "sample_std": 0.011751065062718686
+      },
+      "reranking.mrr": {
+        "mean": 0.3213128306878307,
+        "sample_std": 0.009507698142691461
+      }
+    },
+    "E3": {
+      "classification.accuracy": {
+        "mean": 0.5625,
+        "sample_std": 0.030446205601796672
+      },
+      "extraction.f1": {
+        "mean": 0.08432415854767013,
+        "sample_std": 0.01994362221887762
+      },
+      "retrieval.mrr": {
+        "mean": 0.11278875387591561,
+        "sample_std": 0.009724337795430058
+      },
+      "reranking.mrr": {
+        "mean": 0.36452546296296295,
+        "sample_std": 0.013122661470285847
+      }
+    }
+  },
+  "source_results_sha256": {
+    "results/validation/seed_17/B_metrics.json": "3b28460c514c6a9a772e8573c16f4c19fa33b3f426d6478bd4a02707f00670d2",
+    "results/validation/seed_17/E0_metrics.json": "bdabb7469ff641ffb09d5694e81f254ab4086ae35e7912fb5e0afd8eead5f949",
+    "results/validation/seed_17/E1_metrics.json": "962d3dd8a647f517806ea824b531474ecb0e9ada8a4c19a84d4fc1e8e89383c5",
+    "results/validation/seed_17/E2_metrics.json": "1f9df97c3595dc3a8181ecd333240e4a5a6e313b56f5cf043ea823d76b2635b0",
+    "results/validation/seed_17/E3_metrics.json": "d60cf04f1169b611d7bbc2dc3d4fc1db5f8c7c6deb2cfecb7f23ae5fe1f3cbcf",
+    "results/validation/seed_42/B_metrics.json": "3bdb6f61cd69c49b522bc01ebf7884331e0b708e095867155dcf9d3862b31021",
+    "results/validation/seed_42/E0_metrics.json": "44392e9fa20ca6bc0ae1d42079968948dd9ade93eae430da6a207e68a3444e60",
+    "results/validation/seed_42/E1_metrics.json": "f9828639abbaa6da39d5eb87864614574985657677be6f97a59a069bf4714af7",
+    "results/validation/seed_42/E2_metrics.json": "117fa9ae2f31d7051fd3e60e05c9deb1a39a456ab9609dc491aaf4b0f1bfa8ea",
+    "results/validation/seed_42/E3_metrics.json": "d73235c2801d4539d122ae8c656f292e16936506a3a4cc7b5001844fe067b459",
+    "results/validation/seed_71/B_metrics.json": "6047dd639772db992e27cadd3c7af9f1eaa14700ddfc4c91e9884f32542450c6",
+    "results/validation/seed_71/E0_metrics.json": "2212681e7a01ad5af725d0e130bcf2acde7a17d32ce14f8de746822fc2d257f6",
+    "results/validation/seed_71/E1_metrics.json": "2e291ff9ae95f0c9dc52745536f5d83b32c304d19f2fc08c1aca9237e1fd91a8",
+    "results/validation/seed_71/E2_metrics.json": "13c392e71a7fefc640acbea6e98e508e086d029d0b07d8e9b293c936a057c754",
+    "results/validation/seed_71/E3_metrics.json": "c0fbea4e197cda8d6f99aa06ed2fafc69a276d615484be2e543a61e031829a64"
+  }
+}
